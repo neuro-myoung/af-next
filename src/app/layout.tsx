@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import { Alegreya } from 'next/font/google'
 import './globals.css'
+import Navbar from '@/components/Navbar/Navbar'
+import Footer from '@/components/Footer/Footer'
 
 const oswald = Alegreya({ subsets: ['latin'] })
 
@@ -17,9 +19,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={oswald.className}>
-          <div className="wrapper">
+        <Navbar />
+
+        <div className="wrapper">
           {children}
-          </div>
+        </div>
+
+        <Footer />
       </body>
     </html>
   )

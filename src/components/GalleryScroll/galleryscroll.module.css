@@ -28,6 +28,9 @@
     position: relative;
 }
 
+.imgWrapper{
+}
+
 .statement:before {
     content:"";
     background-color:#f2f2f2;
