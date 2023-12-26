@@ -4,7 +4,9 @@
     display: flex;
     flex-wrap: wrap;
     line-height: 1;
+    position: relative;
 }
+
 
 .word {
     margin: 6px;

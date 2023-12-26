@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
-import { Oswald } from 'next/font/google'
+import { Alegreya } from 'next/font/google'
 import './globals.css'
 
-const oswald = Oswald({ subsets: ['latin'] })
+const oswald = Alegreya({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Create Next App',

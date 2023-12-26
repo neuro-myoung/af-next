@@ -38,9 +38,9 @@ export default function GalleryScroll() {
         target: container,
         offset: ['start end', 'end start']
     })
-    const y = useTransform(scrollYProgress, [0, 1], [0, height * 2])
-    const y2 = useTransform(scrollYProgress, [0, 1], [0, height * 3.3])
-    const y3 = useTransform(scrollYProgress, [0, 1], [0, height * 1.25])
+    const y = useTransform(scrollYProgress, [0, 1], [0, height * 1.5])
+    const y2 = useTransform(scrollYProgress, [0, 1], [0, height * 2.0])
+    const y3 = useTransform(scrollYProgress, [0, 1], [0, height * 1.1])
     const y4 = useTransform(scrollYProgress, [0, 1], [0, height * 2.6])
 
     useEffect( () => {
@@ -86,7 +86,7 @@ const Column = ({images, y=0}) => {
               alt='image'
               className='img'
               fill
-              style={{objectFit:"contain"}}
+              style={{objectFit:"cover"}}
             />
           </div>
         )}
